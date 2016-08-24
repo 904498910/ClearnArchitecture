@@ -7,6 +7,8 @@ android {
 
     defaultConfig {
         buildConfigField "boolean", "IS_DEBUG", "true"
+        buildConfigField "String", "LOG_TAG", "\"mvpArchitecture\""
+        buildConfigField "String", "ServerUrl", "\"http://cedu.njhuadai.com/\""
         applicationId "com.fly.mvpcleanarchitecture"
         minSdkVersion 14
         targetSdkVersion 23
