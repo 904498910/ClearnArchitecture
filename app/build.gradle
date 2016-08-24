@@ -6,6 +6,7 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
+        buildConfigField "boolean", "IS_DEBUG", "true"
         applicationId "com.fly.mvpcleanarchitecture"
         minSdkVersion 14
         targetSdkVersion 23
@@ -36,6 +37,7 @@ dependencies {
     compile 'com.hwangjr.rxbus:rxbus:1.0.3'
     compile 'io.reactivex:rxandroid:0.24.0'
     compile 'com.hwangjr.rxbus:rxbus:1.0.3'
+    compile 'com.orhanobut:logger:1.15'
 
     //Dagger
     provided 'javax.annotation:javax.annotation-api:1.2'

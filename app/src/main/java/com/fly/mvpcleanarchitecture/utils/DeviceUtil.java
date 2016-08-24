@@ -6,6 +6,8 @@ import android.content.pm.PackageManager;
 import android.telephony.TelephonyManager;
 import android.util.DisplayMetrics;
 
+import com.orhanobut.logger.Logger;
+
 /**
  * Created by tiansj on 14/12/30.
  */
@@ -144,7 +146,7 @@ public class DeviceUtil {
             final String packageName = context.getPackageName();
             return context.getPackageManager().getPackageInfo(packageName, 0).versionCode;
         } catch (PackageManager.NameNotFoundException e) {
-            LogUtil.e(e.getMessage());
+            Logger.e(e.getMessage());
         }
         return 0;
     }

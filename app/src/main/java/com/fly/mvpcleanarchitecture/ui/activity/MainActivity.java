@@ -12,7 +12,7 @@ import com.fly.mvpcleanarchitecture.ui.BaseActivity;
 import com.fly.mvpcleanarchitecture.ui.entry.UserInfo;
 import com.fly.mvpcleanarchitecture.ui.presenter.TestPresenter;
 import com.fly.mvpcleanarchitecture.ui.view.View;
-import com.fly.mvpcleanarchitecture.utils.LogUtil;
+import com.orhanobut.logger.Logger;
 
 import javax.inject.Inject;
 
@@ -40,7 +40,7 @@ public class MainActivity extends BaseActivity implements View.TestView {
         ButterKnife.bind(this);
         testPresenter.setView(this);
 
-        LogUtil.d(testPresenter.toString()+" "+testPresenter2.toString());
+        Logger.d(testPresenter.toString()+" "+testPresenter2.toString());
     }
 
     @Override
@@ -55,12 +55,12 @@ public class MainActivity extends BaseActivity implements View.TestView {
         info.setAge(10);
         info.setName("bao");
         userInfoDao.add(info);
-        LogUtil.d("Db Insert Success");
+        Logger.d("Db Insert Success");
     }
 
     @Override
     protected void onDestroy() {
-        LogUtil.d("MainActivity Destroy");
+        Logger.d("MainActivity Destroy");
         super.onDestroy();
     }
 
