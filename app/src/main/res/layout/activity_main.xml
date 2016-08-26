@@ -12,6 +12,10 @@
         android:text="测试"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dip"/>
     <ImageView
         android:layout_width="match_parent"
         android:src="@mipmap/test"

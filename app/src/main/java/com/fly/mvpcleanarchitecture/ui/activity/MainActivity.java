@@ -44,6 +44,12 @@ public class MainActivity extends BaseActivity implements View.TestView {
     }
 
     @Override
+    protected void onDestroy() {
+        Logger.d("MainActivity Destroy");
+        super.onDestroy();
+    }
+
+    @Override
     public void injectDependencies() {
         MvpCleanApplication.getApplicationComponent().inject(this);
     }
@@ -56,12 +62,6 @@ public class MainActivity extends BaseActivity implements View.TestView {
         info.setName("bao");
         userInfoDao.add(info);
         Logger.d("Db Insert Success");
-    }
-
-    @Override
-    protected void onDestroy() {
-        Logger.d("MainActivity Destroy");
-        super.onDestroy();
     }
 
     @Override
