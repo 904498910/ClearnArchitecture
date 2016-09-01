@@ -1,6 +1,6 @@
 package com.fly.mvpcleanarchitecture.app;
 
-import android.app.Application;
+import android.support.multidex.MultiDexApplication;
 
 import com.fly.mvpcleanarchitecture.BuildConfig;
 import com.fly.mvpcleanarchitecture.app.dependencyinjection.ApiServiceModule;
@@ -14,7 +14,7 @@ import com.orhanobut.logger.Logger;
 /**
  * Created by Administrator on 2016/8/3.
  */
-public class MvpCleanApplication extends Application {
+public class MvpCleanApplication extends MultiDexApplication {
 
     private static ApplicationComponent applicationComponent;
 

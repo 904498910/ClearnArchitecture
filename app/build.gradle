@@ -14,6 +14,7 @@ android {
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -40,6 +41,7 @@ dependencies {
     compile 'io.reactivex:rxandroid:0.24.0'
     compile 'com.hwangjr.rxbus:rxbus:1.0.3'
     compile 'com.orhanobut:logger:1.15'
+    compile 'com.android.support:multidex:1.0.0'
 
     //Dagger
     provided 'javax.annotation:javax.annotation-api:1.2'
