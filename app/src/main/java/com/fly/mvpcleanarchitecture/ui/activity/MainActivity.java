@@ -2,6 +2,7 @@ package com.fly.mvpcleanarchitecture.ui.activity;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.fly.mvpcleanarchitecture.R;
@@ -32,6 +33,7 @@ public class MainActivity extends BaseActivity implements View.TestView {
     UserInfoDao userInfoDao;
     @Bind(R.id.test_btn)
     Button testBtn;
+    private LinearLayout linearLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
